@@ -1,13 +1,13 @@
 import discord
 from discord.ext import commands
-from core.classes import Cog_Extensoin
+from core.classes import Cog_Extension
 import random
 import json
 
 with open('setting.json',mode='r',encoding='utf8') as jfile:
     jdata = json.load(jfile)
 
-class React(Cog_Extensoin):
+class React(Cog_Extension):
 
     @commands.command()
     async def 圖片(self,ctx):
