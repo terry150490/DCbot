@@ -20,5 +20,10 @@ class React(Cog_Extension):
         random_pick = random.choice(jdata['url_pic'])
         await ctx.send(random_pick)
 
+    @commands.command()
+    async def University(self,ctx):
+        random_pick = random.choice(jdata['uni'])
+        await ctx.send(random_pick)
+
 def setup(bot):
         bot.add_cog(React(bot))
